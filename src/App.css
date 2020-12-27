@@ -1,38 +1,161 @@
-.App {
+body {
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  margin: 0.5%;
+}
+
+#nav {
+  color: white;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+a{
+  text-decoration: none;
+  font-family: 'Patrick Hand', cursive;
+  color: white;
+  font-size: xx-large;
+  margin-right: 1.5%;
+}
+
+#logo {
+  display: block;
+  float: right;
+  font-size: xx-large;
+  color: rgb(89, 0, 255);
+  margin-top: 0;
+  margin-right: 0.5%;
+  margin-bottom: 0;
+}
+
+#who {
   text-align: center;
+  color: white;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 400%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#user-container {
+  margin: 3%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.user {
+  height: 250px;
+  border-radius: 15px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.user-name {
+  text-align: center;
+  position: relative;
+  top: 30%;
+  color: black;
+  font-weight: bold;
+  font-size: 200%;
+}
+
+#search{
+  border-radius: 6px;
+  color: white;
+  background-color: #000;
+  margin-top: 1%;
+  margin-left: 5%;
+}
+
+#budget{
+  display: inline;
+  float: right;
+  margin-right: 0.5%;
+  color: white;
+  font-family: 'Patrick Hand', cursive;
+  font-size: x-large;
+  margin-top: 1%;
+  margin-right: 5%;
+}
+
+#catalog-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2%;
+  margin: 5%;
+}
+
+#rented-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2%;
+  margin: 5%;
+}
+
+.movie {
+  height: 400px;
+  width: 100%;
+  border-radius: 15px;
+  position: relative;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+
+}
+
+i {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: xx-large;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.section-title {
+  color: white;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 200%;
+  margin-left: 5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#movieDetail{
+  position: absolute;
+  height: 70%;
+  width: 90%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+#movie-title {
+  text-align: center;
+  color: white;
+  font-family:  'Patrick Hand', cursive;
+  font-size: 300%;
+}
+
+#descImg {
+  position: relative;
+  height: 80%;
+  width: 30%;
+  left: 35%;
+  margin: 2%, auto;
+}
+
+#movie-desc {
+  text-align: center;
+  color: white;
+  font-family:  'Patrick Hand', cursive;
+  font-size: 180%;
+}
+
+img {
+  object-fit: cover;
 }
